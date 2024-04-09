@@ -90,7 +90,7 @@ if AmazonSpidersSpider.page_number <= 334:
 ```
 at the end of the parse() function (after yield items and before pass)
 
-## Push Code to GitHub:
+## Push Code to GitHub
 In the command prompt terminal, write,
 1. git init
 2. git add . && git commit -m "initial commit" (May ask for email and username if committing for the first time from your computer) (Will see n files changed)
