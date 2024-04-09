@@ -9,22 +9,22 @@
 
 * Create new project in Pycharm(VENV)
 * Install packages (Only once, do upgrade) - Scrapy, pywin32 and scrapy-user-agents
-** scrapy to do scraping
-** pywin32 integrate pycharm to windows
-** scrapy-user-agents to create fake users for scraping every time (No need when scrapping a site for the first time)
+1. scrapy to do scraping
+2. pywin32 integrate pycharm to windows
+3. scrapy-user-agents to create fake users for scraping every time (No need when scrapping a site for the first time)
 
 * Go to terminal -> down arrow on right -> command prompt -> should have venv
 * Execute below commands:
-** scrapy startproject amazoncrawl (Only for the first time because already started when reworking on the project)
-** cd amazoncrawl
-** scrapy genspider amazon_spiders amazon.com (Only for the first time to create spider for crawling) (Can have any name and website)
+1. scrapy startproject amazoncrawl (Only for the first time because already started when reworking on the project)
+2. cd amazoncrawl
+3. scrapy genspider amazon_spiders amazon.com (Only for the first time to create spider for crawling) (Can have any name and website)
 
 * Go to items.py and give variable # comment name for all the variables
 * Get the selector gadget extension on Chrome and enable it
 * Go in amazon_spiders.py -> In class after name, write start_urls = ['url'] -> remove allowed domains -> xpath copy and paste -> give items['varname']= varname, yield items and pass
 * Execute the below commands in the terminal:
-** cls (clears screen)
-** scrapy crawl amazon_spiders (Always needed to see scraped data) (Do give cd amazoncrawl when reworking on project before this)
+1. cls (clears screen)
+2. scrapy crawl amazon_spiders (Always needed to see scraped data) (Do give cd amazoncrawl when reworking on project before this)
 
 * ..items have.. representing that we're going one step/directory back
 
