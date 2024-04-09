@@ -26,7 +26,7 @@
 1. cls (clears screen)
 2. scrapy crawl amazon_spiders (Always needed to see scraped data) (Do give cd amazoncrawl when reworking on project before this)
 
-* ..items have.. representing that we're going one step/directory back
+* ..items have .. representing that we're going one step/directory back
 
 ## https://www.google.com/robots.txt to check allowed extraction from a website
 
