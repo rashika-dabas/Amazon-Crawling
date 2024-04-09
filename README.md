@@ -3,27 +3,27 @@
 ## Python Version: 3.10
 ## Title: Web Scrapping using Scrapy
 
-## Note: venv folder automatically gets created in AmazonCrawling when venv is selected on creating project and .idea folder just stores project related settings
+## Note: venv folder automatically gets created in AmazonCrawling when venv is selected on creating the project and the .idea folder just stores project-related settings
 
 ## Prerequisites: HTML and Scraping Basics
 
 * Create new project in Pycharm(VENV)
 * Install packages (Only once, do upgrade) - Scrapy, pywin32 and scrapy-user-agents
-** scrapy to do scraping
-** pywin32 integrate pycharm to windows
-** scrapy-user-agents to create fake users for scraping everytime (No need when scrapping a site for first time)
+- scrapy to do scraping
+- pywin32 integrate pycharm to windows
+- scrapy-user-agents to create fake users for scraping every time (No need when scrapping a site for the first time)
 
 * Go to terminal -> down arrow on right -> command prompt -> should have venv
 * Execute below commands:
-> scrapy startproject amazoncrawl (Only for the first time because already started when reworking on the project)
-> cd amazoncrawl
-> scrapy genspider amazon_spiders amazon.com (Only for the first time to create spider for crawling) (Can have any name and website)
+- scrapy startproject amazoncrawl (Only for the first time because already started when reworking on the project)
+- cd amazoncrawl
+- scrapy genspider amazon_spiders amazon.com (Only for the first time to create spider for crawling) (Can have any name and website)
 * Go to items.py and give variable # comment name for all the variables
-* Get selector gadget extension on Chrome and enable it
+* Get the selector gadget extension on Chrome and enable it
 * Go in amazon_spiders.py -> In class after name, write start_urls = ['url'] -> remove allowed domains -> xpath copy and paste -> give items['varname']= varname, yield items and pass
 * Execute the below commands in the terminal:
-> cls (clears screen)
-> scrapy crawl amazon_spiders (Always needed to see scraped data) (Do give cd amazoncrawl when reworking on project before this)
+- cls (clears screen)
+- scrapy crawl amazon_spiders (Always needed to see scraped data) (Do give cd amazoncrawl when reworking on project before this)
 * ..items have.. representing that we're going one step/directory back
 
 ## https://www.google.com/robots.txt to check allowed extraction from a website
@@ -54,9 +54,9 @@ run scrapy crawl amazon_spiders again
 
 ## Connecting with MongoDBCompass:
 Create data -> db folder in C drive
-Open mongod from program files and then close it after sometime
-Check that some files are there in db folder
-Open mongodb compass and click connect
+Open mongod from program files and then close it after some time
+Check that some files are there in the db folder
+Open MongoDB compass and click connect
 
 ## Storing data in MongoDB:
 Install pymongo package
