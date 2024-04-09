@@ -46,12 +46,13 @@ DOWNLOADER_MIDDLEWARES = {
 * Similar to 2nd
 * Install scrapy-proxy-pool
 * Add in settings.py, PROXY_POOL_ENABLED = True after ROBOTSTXT_OBEY = True and under middlewares:
-DOWNLOADER_MIDDLEWARES = {
+```DOWNLOADER_MIDDLEWARES = {
     # ...
     'scrapy_proxy_pool.middlewares.ProxyPoolMiddleware': 610,
     'scrapy_proxy_pool.middlewares.BanDetectionMiddleware': 620,
     # ...
 }
+```
 
 run scrapy crawl amazon_spiders again
 
