@@ -3,10 +3,11 @@
 ## Python Version: 3.10
 ## Title: Web Scrapping using Scrapy
 
-## Note: venv folder automatically gets created in AmazonCrawling when venv is selected on creating the project and the .idea folder just stores project-related settings
+## Note: The venv folder automatically gets created in AmazonCrawling when venv is selected on creating the project and the .idea folder just stores project-related settings
 
 ## Prerequisites: HTML and Scraping Basics
 
+## Steps
 * Create new project in Pycharm(VENV)
 * Install packages (Only once, do upgrade) - Scrapy, pywin32 and scrapy-user-agents
 1. scrapy to do scraping
@@ -66,25 +67,27 @@ run scrapy crawl amazon_spiders again
 * Create data -> db folder in C drive
 * Open mongod from program files and then close it after some time
 * Check that some files are there in the db folder
-* Open MongoDB compass and click connect
+* Open MongoDB Compass and click connect
 
 ## Storing data in MongoDB:
-Install pymongo package
-pymongo connects python to mongodb
-ITEM_PIPELINES in settings.py comment out
-pipelines.py:
-Inside init in class, add connection(using username & port number or connection_string), database and collection 
-add documents in collection as dictionary in process_item function of class
-run scrapy crawl amazon_spiders again
-open mongodb compass and refresh
-database will be there
+* Install pymongo package
+* pymongo connects Python to Mongodb
+* Comment out ITEM_PIPELINES in settings.py
+* In pipelines.py,
+1. Inside init in class, add connection (using username & port number or connection_string), database and collection 
+2. Add documents in the collection as a dictionary in the process_item function of class
+3. Run scrapy crawl amazon_spiders again
+4. Open MongoDB Compass and refresh
+5. The database will be there
 
 ## Scraping multiple pages:
 For scraping multiple pages, in spider file, add page_number = 2 as the second line and
+```
 next_page = 'https://www.amazon.in/s?k=clothing&i=apparel&rh=n%3A1571271031%2Cn%3A1953173031&dc&page=' + str(AmazonSpidersSpider.page_number) + '&qid=1648063354&rnid=3576079031&ref=sr_pg_' + str(AmazonSpidersSpider.page_number)
 if AmazonSpidersSpider.page_number <= 334:
     yield response.follow(next_page, callback=self.parse)
     AmazonSpidersSpider.page_number += 1
+```
 at the end of the parse() function (after yield items and before pass)
 
 ## Pushing code to GitHub:
@@ -94,4 +97,3 @@ In the command prompt terminal, write,
 3. git branch -M main
 4. git remote add origin https://github.com/rashika-dabas/Amazon-Crawling.git
 5. git push -u origin main (May ask for your GitHub password)
-6. Left files are added manually
