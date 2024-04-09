@@ -38,15 +38,18 @@
 * Install scrapy-user-agents
 * With this, you do not get disallowed to access links after scrolling once through rotating 2200 agents (Will extract 25-35 pages max)
 * Add in settings.py under middlewares:
+```
 DOWNLOADER_MIDDLEWARES = {
     'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware': None,
     'scrapy_user_agents.middlewares.RandomUserAgentMiddleware': 400,
 }
+```
 4. Use proxies (Different IP addresses):
 * Similar to 2nd
 * Install scrapy-proxy-pool
 * Add in settings.py, PROXY_POOL_ENABLED = True after ROBOTSTXT_OBEY = True and under middlewares:
-```DOWNLOADER_MIDDLEWARES = {
+```
+DOWNLOADER_MIDDLEWARES = {
     # ...
     'scrapy_proxy_pool.middlewares.ProxyPoolMiddleware': 610,
     'scrapy_proxy_pool.middlewares.BanDetectionMiddleware': 620,
