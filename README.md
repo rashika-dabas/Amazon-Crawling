@@ -42,7 +42,7 @@ DOWNLOADER_MIDDLEWARES = {
     'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware': None,
     'scrapy_user_agents.middlewares.RandomUserAgentMiddleware': 400,
 }
-4. Use proxies (Different ip addresses):
+4. Use proxies (Different IP addresses):
 * Similar to 2nd
 * Install scrapy-proxy-pool
 * Add in settings.py, PROXY_POOL_ENABLED = True after ROBOTSTXT_OBEY = True and under middlewares:
