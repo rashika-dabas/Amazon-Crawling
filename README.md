@@ -33,7 +33,10 @@
 ## 3 Ways to Bypass Restrictions:
 1. Using Google bot user agent (Google Bot):
 * Search it and open the second link with whatismybrowser.com (Take any one) (Can extract any number of pages)
-* add this in settings.py under USER_AGENT: USER_AGENT = 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)'
+* add this in settings.py under USER_AGENT:
+```
+USER_AGENT = 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)'
+```
 3. Using user agents (Different users):
 * Install scrapy-user-agents
 * With this, you do not get disallowed to access links after scrolling once through rotating 2200 agents (Will extract 25-35 pages max)
@@ -60,10 +63,10 @@ DOWNLOADER_MIDDLEWARES = {
 run scrapy crawl amazon_spiders again
 
 ## Connecting with MongoDBCompass:
-Create data -> db folder in C drive
-Open mongod from program files and then close it after some time
-Check that some files are there in the db folder
-Open MongoDB compass and click connect
+* Create data -> db folder in C drive
+* Open mongod from program files and then close it after some time
+* Check that some files are there in the db folder
+* Open MongoDB compass and click connect
 
 ## Storing data in MongoDB:
 Install pymongo package
