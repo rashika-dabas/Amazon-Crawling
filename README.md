@@ -31,7 +31,7 @@
 
 ## https://www.google.com/robots.txt to check allowed extraction from a website
 
-## 3 Ways to Bypass Restrictions:
+## 3 Ways to Bypass Restrictions
 1. Using Google bot user agent (Google Bot):
 * Search it and open the second link with whatismybrowser.com (Take any one) (Can extract any number of pages)
 * add this in settings.py under USER_AGENT:
@@ -63,13 +63,13 @@ DOWNLOADER_MIDDLEWARES = {
 
 run scrapy crawl amazon_spiders again
 
-## Connecting with MongoDBCompass:
+## Connect with MongoDB Compass
 * Create data -> db folder in C drive
 * Open mongod from program files and then close it after some time
 * Check that some files are there in the db folder
 * Open MongoDB Compass and click connect
 
-## Storing data in MongoDB:
+## Store Data in MongoDB
 * Install pymongo package
 * pymongo connects Python to Mongodb
 * Comment out ITEM_PIPELINES in settings.py
@@ -80,7 +80,7 @@ run scrapy crawl amazon_spiders again
 4. Open MongoDB Compass and refresh
 5. The database will be there
 
-## Scraping multiple pages:
+## Scrape Multiple Pages
 For scraping multiple pages, in spider file, add page_number = 2 as the second line and
 ```
 next_page = 'https://www.amazon.in/s?k=clothing&i=apparel&rh=n%3A1571271031%2Cn%3A1953173031&dc&page=' + str(AmazonSpidersSpider.page_number) + '&qid=1648063354&rnid=3576079031&ref=sr_pg_' + str(AmazonSpidersSpider.page_number)
@@ -90,7 +90,7 @@ if AmazonSpidersSpider.page_number <= 334:
 ```
 at the end of the parse() function (after yield items and before pass)
 
-## Pushing code to GitHub:
+## Push Code to GitHub:
 In the command prompt terminal, write,
 1. git init
 2. git add . && git commit -m "initial commit" (May ask for email and username if committing for the first time from your computer) (Will see n files changed)
