@@ -1,5 +1,8 @@
 # Amazon-Crawling
 
+## Task
+Implementing Web Scrapping using Scrapy
+
 ## Synopsis
 ### Objective: Succeed in scraping Amazon Baby Clothing Sets products data and store it employing MongoDB software
 ### Approach:
@@ -14,9 +17,6 @@
 3. MongoDB
 4. Git and GitHub
 5. Chrome Browser
-
-## Objective
-Implementing Web Scrapping using Scrapy
 
 ## Note
 The venv folder automatically gets created in AmazonCrawling when venv is selected on creating the project and the .idea folder just stores project-related settings
