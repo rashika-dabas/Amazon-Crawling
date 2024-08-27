@@ -1,10 +1,10 @@
 # Amazon-Crawling
 
-## IDE
-Pycharm
-
-## Python Version
-3.10
+## Requirements
+1. Pycharm
+2. Python Version - 3.10
+3. MongoDB
+4. Git and GitHub
 
 ## Objective
 Implementing Web Scrapping using Scrapy
