@@ -1,7 +1,7 @@
 # Amazon-Crawling
 
 ## IDE
-PYCHARM
+Pycharm
 
 ## Python Version
 3.10
