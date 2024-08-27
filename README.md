@@ -10,7 +10,7 @@
 Implementing Web Scrapping using Scrapy
 
 ## Note
-The venv folder automatically gets created in AmazonCrawling when venv is selected on creating the project and the .idea folder just stores project-related settings
+The venv folder automatically gets created in AmazonCrawling when venv is selected on creating the project and the .idea folder just stores project-related settings.
 
 ## Prerequisites
 HTML and Scraping Basics
