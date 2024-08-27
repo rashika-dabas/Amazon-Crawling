@@ -47,7 +47,7 @@ HTML and Scraping Basics
 ```
 USER_AGENT = 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)'
 ```
-3. Using user agents (Different users):
+2. Using user agents (Different users):
 * Install scrapy-user-agents
 * With this, you do not get disallowed to access links after scrolling once through rotating 2200 agents (Will extract 25-35 pages max)
 * Add in settings.py under middlewares:
@@ -57,8 +57,8 @@ DOWNLOADER_MIDDLEWARES = {
     'scrapy_user_agents.middlewares.RandomUserAgentMiddleware': 400,
 }
 ```
-4. Use proxies (Different IP addresses):
-* Similar to 2nd
+3. Use proxies (Different IP addresses):
+** Similar to 2nd
 * Install scrapy-proxy-pool
 * Add in settings.py, PROXY_POOL_ENABLED = True after ROBOTSTXT_OBEY = True and under middlewares:
 ```
