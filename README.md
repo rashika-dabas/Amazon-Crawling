@@ -5,6 +5,7 @@
 2. Python Version - 3.10
 3. MongoDB
 4. Git and GitHub
+5. Chrome Browser
 
 ## Objective
 Implementing Web Scrapping using Scrapy
@@ -42,14 +43,14 @@ HTML and Scraping Basics
 * Bypass restrictions
 ### 3 Ways to Bypass Restrictions
 1. Using Google bot user agent (Google Bot):
-* Search it and open the second link with whatismybrowser.com (Take any one) (Can extract any number of pages)
+* Search it and open the second link with whatismybrowser.com. (Take any one) (Can extract any number of pages)
 * Add this in settings.py under USER_AGENT:
 ```
 USER_AGENT = 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)'
 ```
 2. Using user agents (Different users):
-* Install scrapy-user-agents
-* With this, you do not get disallowed to access links after scrolling once through rotating 2200 agents (Will extract 25-35 pages max)
+* Install scrapy-user-agents.
+* With this, you do not get disallowed to access links after scrolling once through rotating 2200 agents. (Will extract 25-35 pages max)
 * Add in settings.py under middlewares:
 ```
 DOWNLOADER_MIDDLEWARES = {
@@ -58,8 +59,8 @@ DOWNLOADER_MIDDLEWARES = {
 }
 ```
 3. Use proxies (Different IP addresses):
-** Similar to 2nd
-* Install scrapy-proxy-pool
+** Similar to 2nd.
+* Install scrapy-proxy-pool.
 * Add in settings.py, PROXY_POOL_ENABLED = True after ROBOTSTXT_OBEY = True and under middlewares:
 ```
 DOWNLOADER_MIDDLEWARES = {
@@ -69,7 +70,6 @@ DOWNLOADER_MIDDLEWARES = {
     # ...
 }
 ```
-
 
 * run scrapy crawl amazon_spiders again
 
