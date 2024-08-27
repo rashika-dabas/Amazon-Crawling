@@ -42,8 +42,8 @@ HTML and Scraping Basics
 * Bypass restrictions
 ### 3 Ways to Bypass Restrictions
 1. Using Google bot user agent (Google Bot):
-* Search it and open the second link with whatismybrowser.com (Take any one) (Can extract any number of pages)
-* add this in settings.py under USER_AGENT:
+- Search it and open the second link with whatismybrowser.com (Take any one) (Can extract any number of pages)
+- add this in settings.py under USER_AGENT:
 ```
 USER_AGENT = 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)'
 ```
