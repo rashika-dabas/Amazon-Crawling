@@ -33,13 +33,14 @@ HTML and Scraping Basics
 * Go in amazon_spiders.py -> In class after name, write start_urls = ['url'] -> remove allowed domains -> xpath copy and paste -> give items['varname']= varname, yield items and pass
 * Execute the below commands in the terminal:
 1. cls (clears screen)
-2. scrapy crawl amazon_spiders (Always needed to see scraped data) (Do give cd amazoncrawl when reworking on project before this)
+2. scrapy crawl amazon_spiders (Always needed to see scraped data) (Do give cd amazoncrawl when reworking on the project before this)
 
-* ..items have .. representing that we're going one step/directory back
+### ..items have .. representing that we're going one step/directory back
 
-## https://www.google.com/robots.txt to check allowed extraction from a website
+### https://www.google.com/robots.txt to check allowed extraction from a website
 
-## 3 Ways to Bypass Restrictions
+* Bypass restrictions
+### 3 Ways to Bypass Restrictions
 1. Using Google bot user agent (Google Bot):
 * Search it and open the second link with whatismybrowser.com (Take any one) (Can extract any number of pages)
 * add this in settings.py under USER_AGENT:
@@ -69,7 +70,7 @@ DOWNLOADER_MIDDLEWARES = {
 }
 ```
 
-run scrapy crawl amazon_spiders again
+* run scrapy crawl amazon_spiders again
 
 ## Connect with MongoDB Compass
 * Create data -> db folder in C drive
