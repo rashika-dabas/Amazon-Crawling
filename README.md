@@ -1,11 +1,13 @@
 # Amazon-Crawling
-## PYCHARM PROJECT: AmazonCrawling
+## IDE: PYCHARM
 ## Python Version: 3.10
-## Title: Web Scrapping using Scrapy
+## Objective
+Implementing Web Scrapping using Scrapy
 
 ## Note: The venv folder automatically gets created in AmazonCrawling when venv is selected on creating the project and the .idea folder just stores project-related settings
 
-## Prerequisites: HTML and Scraping Basics
+## Prerequisites
+HTML and Scraping Basics
 
 ## Steps
 * Create new project in Pycharm(VENV)
