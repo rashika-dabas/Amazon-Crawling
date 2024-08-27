@@ -24,7 +24,7 @@ The venv folder automatically gets created in AmazonCrawling when venv is select
 ## Prerequisites
 HTML and Scraping Basics
 
-## Steps
+## Steps for Scrapping
 * Create new project in Pycharm(VENV)
 * Install packages (Only once, do upgrade) - Scrapy, pywin32 and scrapy-user-agents
 1. scrapy to do scraping
