@@ -59,7 +59,7 @@ DOWNLOADER_MIDDLEWARES = {
 }
 ```
 3. Use proxies (Different IP addresses):
-** Similar to 2nd.
+* Similar to 2nd.
 * Install scrapy-proxy-pool.
 * Add in settings.py, PROXY_POOL_ENABLED = True after ROBOTSTXT_OBEY = True and under middlewares:
 ```
