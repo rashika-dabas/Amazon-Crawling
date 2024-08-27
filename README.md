@@ -1,7 +1,8 @@
 # Amazon-Crawling
 
-## Objective: Succeed in scraping Amazon Baby Clothing Sets products data and store it employing MongoDB software
-## Approach:
+## Synopsis
+### Objective: Succeed in scraping Amazon Baby Clothing Sets products data and store it employing MongoDB software
+### Approach:
 * Taken advantage of Scrapy, Pywin32, Scrapy-User-Agents and PyMongo and created spider for crawling
 * Applied HTML concepts and Selector Gadget Chrome Extension to select similarly placed data collectively
 * Bypassed restrictions via agents and proxies, defined pipeline and encoded extraction for multiple pages
